@@ -1,7 +1,7 @@
 
 package happy.holiday.server.entity;
 
-import java.util.List;
+import java.util.ArrayList;
 import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,6 +28,7 @@ public class UserEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
+	//TODO: Добавить уникальность столбца
 	private String phone_number;
 	private String password;
 
@@ -36,5 +37,5 @@ public class UserEntity {
 
 	@OneToMany
 	@JoinColumn(name = "item_id")
-	private List<OrderEntity> listOfOrders;
+	private ArrayList<OrderEntity> listOfOrders;
 }

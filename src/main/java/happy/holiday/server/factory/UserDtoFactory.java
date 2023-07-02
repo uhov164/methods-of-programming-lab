@@ -12,7 +12,6 @@ import jakarta.transaction.Transactional;
 @Component
 public class UserDtoFactory {
 
-	@Transactional
 	public UserDto createUserDto(UserEntity userEntity) {
 
 		var phoneNumber = userEntity.getPhoneNumber();

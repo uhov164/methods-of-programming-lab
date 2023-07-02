@@ -1,6 +1,6 @@
 package happy.holiday.server.entity;
 
-import java.util.List
+import java.util.List;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,7 +23,6 @@ import jakarta.persistence.OneToMany;
 @Builder
 @Table(name = "seller")
 public class SellerEntity {
-
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
